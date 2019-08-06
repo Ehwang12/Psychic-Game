@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.background {
+    background-image: url("../images/linedpaper.png");
+    height: 100vh;
+}
+
+body {
+    font-family: 'Special Elite', cursive;
+}
+
+p {
+    font-size: 2em;
+}
+
+#inkImg {
+    width: 20%;
+    margin-left: -40%;
+    margin-top: 10%;
+}
