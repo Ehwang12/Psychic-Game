@@ -10,36 +10,58 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- CSS file -->
     <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- jQuery cdn -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    
     <title>The Psychic Game</title>
 </head>
 <body>
     <div class="background">
         <div class="container-fluid text-center">
             <div class="title">
-                <h1>The Pyschic Game</h1>
-                <h5>Type any letter on your keyboard and see if you can win against the odds!</h5>
+                <h1>The Psychic Game</h1>
             </div>
-        
-            <br>
-            
-            <h3> Guess what letter I'm thinking of</h3>
-
-            <!-- Score tracking -->
-            <div class="score mt-5">
-                <p> Wins: <span id="wins">0</span></p>
-
-                <p> Losses: <span id="loss">0</span></p>
+            <div class="row">
+                <div class="col-md mt-5">
+                    <h2> Guess what letter I'm thinking of</h2>
+                    <br>
+                    <h5>Type any letter on your keyboard and see if you can win against the odds!</h5>
+                </div>
             </div>
-            
-            <!-- Guess Input -->
-            <p>Your Guess So Far: <span id="guess"></span></p>
-
-            <img src="./assets/images/ink-stain-3.png" alt="ink-stain" id="inkImg">
+            <div class="row">
+                <div class="col-md-4"></div>
+                <div class="col-md-4 text-center">
+                    <!-- Score tracking -->
+                    <div class="score mt-5">
+                        <p> Wins: <span id="wins">0</span></p>
+                        <p> Losses: <span id="loss">0</span></p>
+                        <p> Your Tries Left: <span id="triesLeft">9</span></p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <img src="./assets/images/splatter.png" alt="ink-splatter" id="splatter">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <!-- Guess Input -->
+                    <p>Your Guess So Far:  
+                        <br>
+                    <span id="guesses"></span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md">
+                    <!-- ink splatter images -->
+                    <img src="./assets/images/ink-stain-3.png" alt="ink-stain" id="inkImg">
+                </div>
+            </div>   
         </div>
     </div>
-    
+
+    <!-- JS file -->
+    <script src="./assets/javascript/game.js"></script>
     <!-- Boostrap JS CDN -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
